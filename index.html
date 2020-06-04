@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Paweł Wojnarowicz & Jakub Kruszyński" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Title icon -->
+    <link rel="icon" sizes="16x16 32x32" href="./images/title1.jpeg" type="image/jpg" />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Carousel css -->
+    <link rel="stylesheet" href="./carousel.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Zestawienie projektów</title>
+</head>
+
+<body id="home">
+    <!-- Nawigacyjne menu - bootstrap -->
+    <nav class="navbar navbar-expand-md fixed-top text-uppercase border-bottom  home">
+        <!-- brand-mark - do zmiany -->
+        <div class="brand">
+            <a href="#home" class="navbar-brand" style="text-decoration: none; color: #111;">P&J</a>
+        </div>
+        <!-- toggler as button -->
+        <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav">
+        <div class="navbar-toggler-icon  span-display">MENU</div>
+      </button>
+        <!-- Content of menu -->
+        <div class="collapse navbar-collapse justify-content-between text-center" id="nav">
+            <ul class="navbar-nav mr-auto font-weight-bold px-2">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Domowa<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tools-tech" class="nav-link text-light">Narzędzia/Technologie</a>
+                </li>
+                <li class="nav-item">
+                    <div class="btn-group dropdown">
+                        <button class="btn text-center  text-light font-weight-bold text-uppercase projectbuttonStyle" type="button">
+                            <a href="#projects" class="text-center  text-light font-weight-bold text-uppercase">Projekty         </a>
+                            </button>
+                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split mr-2 text-light " data-toggle="dropdown">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu text-center  text-light  dropdownBackground">
+                            <a class="dopdown-item  d-block text-light text-left m-2" href="https://paweljarosiewicz.github.io/WSB-CiekawiHistorii/">1. Ciekawi Historii</a>
+                            <a class="dopdown-item d-block text-light text-left m-2" href="https://github.com/Kruchy1980/activity-planner">2. Activity Planner -> wersja lokalna/Github</a></a>
+                            <a class="dopdown-item text-light d-block text-left m-2" href="https://kruchy1980.github.io/ohe-arm-bandit-gagme-oop-js/">3. Jednoręki Bandyta</a>
+                            <a class="dopdown-item text-light d-block text-left m-2" href="https://kruchy1980.github.io/git-data-searcher/">4. Git Data Searcher</a>
+                            <a class="dopdown-item text-light d-block text-left m-2" href="https://charter-yacht-app-vue-wsb-2.now.sh/">5. Czarter Jahtów</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a href="#about" class="nav-link text-light">O Nas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link text-light">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Slider Show Section - in Bootstrap - auto/manual  Home-->
+    <section id="home" class="container-fluid p-0  bg-secondary text-uppercase">
+        <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselCaptions" data-slide-to="0" class="active item-extend"></li>
+                <li data-target="#carouselCaptions" data-slide-to="1" class="item-extend"></li>
+                <li data-target="#carouselCaptions" data-slide-to="2" class="item-extend"></li>
+                <li data-target="#carouselCaptions" data-slide-to="3" class="item-extend"></li>
+                <li data-target="#carouselCaptions" data-slide-to="4" class="item-extend"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/atoll.jpeg" class="d-block w-100 text-center" alt="Atoll Picture">
+                    <div class="carousel-caption  position-absolute display-description">
+                        <p class="text-extend"><a href="#home" class="link-extend">Domowa</a></p>
+                        <p class="description-extend">Strona ta jest to portfolio projektów stworzonych przez Pawła Jarosiewicza i Jakuba Kruszyńskiego</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/baloons.jpeg" class="d-block w-100" alt="aloons picture">
+                    <div class="carousel-caption d-md-block position-absolute display-description">
+                        <p class="text-extend"><a href="#tools-tech" class="link-extend">Narzędzia i technologie</a></p>
+                        <p class="description-extend">W tym rozdziale znajdują się informacje na temat użytych w projektach technologii</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/city.jpeg" class="d-block w-100" alt="City Picture">
+                    <div class="carousel-caption d-md-block position-absolute display-description">
+                        <p class="text-extend"><a href="#projects" class=" link-extend">Projekty</a></p>
+                        <p class="description-extend">Tutaj znajedziecie slidera z ktrótkimi opisami projektów i odnośnikami do nich</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/desert.jpeg" class="d-block w-100" alt="Desert Picture">
+                    <div class="carousel-caption d-md-block position-absolute display-description">
+                        <p class="text-extend"><a href="#about" class="link-extend">O Nas</a></p>
+                        <p class="description-extend">W tym miejscu umieszczamy skromny opis naszych osób</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/winter.jpeg" class="d-block w-100" alt="Winter Picture">
+                    <div class="carousel-caption d-md-block position-absolute display-description">
+                        <p class="text-extend"><a href="#contact" class="link-extend">Kontakt</a></p>
+                        <p class="description-extend">Jeśli checielibyście skontaktować się z którymś z nas to zapraszamy do wysłania zapytania lub znalezienia nas na danym portalu.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Second section - tools and technologies - Bootstrap -->
+    <section id="tools-tech" class="tools-technologies">
+        <div class="row my-3">
+            <div class="col  text-center  tools">
+                <p class="tools-name bg-secondary rounded-pill text-warning fontSizing p-2"> Narzędzia i Technologie</p>
+            </div>
+        </div>
+        <div class="container my-3">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 p-2 text-left ">
+                    <h2 class="text-center text-muted fontSizing">Narzędzia</h2>
+                    <ol class="my-3 fontSizing2">
+                        <li>Sass</li>
+                        <li>Vuex</li>
+                        <li>Vuelidate</li>
+                        <li>Moment</li>
+                        <li>Firebase a w tym:
+                            <ul class="m-2">
+                                <li>Firestore</li>
+                                <li>Authentication</li>
+                                <li>Database</li>
+                                <li>Storage</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="col-sm-12 col-md-6 p-2 text-left">
+                    <h2 class="text-center text-muted fontSizing">Technologie</h2>
+                    <ul class="my-2 fontSizing2">
+                        <li>1. Bootstrap</li>
+                        <li>2. CSS3</li>
+                        <li>3. HTML5</li>
+                        <li>4. JavaScript</li>
+                        <li>5. JQuery</li>
+                        <li>6. SCSS</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- Slider in javscripts -->
+    <section class="text-center car-cont-main" id="projects">
+        <!-- Projects row -->
+        <div class="row justify-content-center text-muted">
+            <div class="col">
+                <h2 class=" m-2 text-warning fontSizing bg-secondary rounded-pill d-block p-2">Projekty</h2>
+            </div>
+        </div>
+        <!-- Main container for slider carousel-->
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="slider-container">
+                    <img src="./projects-photos/1.ciekawi-historii.jpg" alt="" class="slider" />
+                    <h2 class="slide-title">Ciekawi Historii</h2>
+                    <p class="slide-description">
+                        Paweł napisz mi co mam tutaj wpisać to wpiszęe5046a48a3f05aa205f7a6fc5962af94066317d0
+                    </p>
+                    <div class="indicators-dots">
+                        <span id="1" class="active"></span>
+                        <span id="2"></span>
+                        <span id="3"></span>
+                        <span id="4"></span>
+                        <span id="5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About section  -->
+    <section id="about">
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col  text-center  tools">
+                    <p class="bg-secondary rounded-pill align-middle display-4">
+                        <p class="text-warning fontSizing bg-secondary rounded-pill p-2"> O Nas </p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-12 col-md-4 p-2 text-center">
+                    <h2 class="text-muted text-success font-weight-bold fontSizing3">Paweł Jarosiewicz</h2>
+                    <img class="rounded-lg mx-auto  d-block w-50 my-3 img-thumbnail imageSizing" src="./our images/Paweł Jarosiewicz.jpg" alt="Paweł Jarosiewicz">
+                    <a class="mx-3" href="https://github.com/PawelJarosiewicz"><img src="./social-icons/github.png" alt="">
+                    </a>
+                    <a class="mx-3" href="https://www.linkedin.com/in/pawe%C5%82-jarosiewicz-265351169/"><img src="./social-icons/linkedin.png" alt=""></a>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg 4 p-2 text-left two">
+                    <h2 class="text-center text-muted fontSizing">Podsumowanie</h2>
+                    <p><span class="d-block">Cześć,</span> Jesteśmy osobami pochodzącymi z różnych środowisk, ale odkryliśmy naszą pasję w tworzeniu aplikacji internetowych z wykorzystaniem różnych technologii.
+                    </p>
+                </div>
+                <!-- My photo -->
+                <div class="col-sm-12 col-md-4 p-2 text-center">
+                    <h2 class=" text-muted font-weight-bold fontSizing3">Jakub Kruszyński</h2>
+                    <img class="rounded-lg mx-auto  d-block w-50 my-3 img-thumbnail imageSizing" src="./our images/Jakub Kruszyński.jpg" alt="Jakub Kruszyński">
+
+                    <a class="mx-3" href="https://github.com/Kruchy1980"><img src="./social-icons/github.png" alt="">
+                    </a>
+                    <a class="mx-3" href="https://www.linkedin.com/in/jakub-kruszyński"><img src="./social-icons/linkedin.png" alt=""></a>
+                </div>
+            </div>
+    </section>
+    <!--  Contact     -->
+    <section id="contact">
+        <div class="row  bg-dark justify-content-center">
+            <div class="col-6 w-60 ">
+                <h2 class="text-warning text-center my-3 fontSizing">Kontakt</h2>
+                <form action="" method="post" class="border rounded p-2 my-2 js-form">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Imię: </label>
+                        <input type="text" class="form-control" id="name">
+                        <small id="nameHelp" class="form-text text-warning text-center">Podaj swoje pełne imię i nazwisko w celu łatwiejszej komunikacji</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="" type="email" id="email" class="text-light">E-mail: </label>
+                        <input type="email" id="email" class="form-control">
+                        <small id="emailHelp" class="form-text text-warning text-center">Nie będziemy się dzielili Twoim e-mailem z nikim poza nami</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactChoice" class="text-light">Wybór kontaktu:</label>
+                        <select class="form-control" id="contact-choice">
+                            <option>Wybierz osobę z którą chcesz się skontaktować.</option>
+                            <option>Paweł Jarosiewicz</option>
+                            <option>Jakub Kruszyński</option>
+                        </select>
+                        <small id="contactChoice" class="form-text text-warning text-center">Wybierz osobę z którą chcesz się skontaktować</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="text-light">Wiadomość:</label>
+                        <textarea name="" id="message" class="form-control" rows="6" placeholder="Wpisz swoją wiadomość"></textarea>
+                    </div>
+                    <button type="submit" id="send-form" class="btn btn-outline-warning btn-block font-weight-bold" ">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer ">
+        <div class="row justify-content-center text-center ">
+            <div class="col-sm-12 col-md-10 col-8 ">
+                <p class="text-muted py-4 ">&copy; WSB 2020 - Utworzone przez Paweł Jarosiewicz & Jakub Kruszyński</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="./scripts/main.js "></script>
+    <script src="./scripts/carousel.js "></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+
+</body>
+
+</html>

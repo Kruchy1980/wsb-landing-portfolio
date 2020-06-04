@@ -1,0 +1,299 @@
+/* Body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 100vw; */
+}
+
+
+/* Navigation */
+
+#home .home {
+    width: 100%;
+    /* padding: 1%; */
+    background-color: #222;
+}
+
+
+/* Navbar toggler */
+
+.navbar-toggler {
+    background-color: rgba(185, 19, 19, 0.9) !important;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.span-display {
+    width: 75% !important;
+    height: 50% !important;
+    margin-right: 5px !important;
+    font-size: 0.8em;
+    color: #111;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Project Button style */
+
+.projectbuttonStyle {
+    transform: translateY(1px) !important;
+}
+
+.projectbuttonStyle a {
+    text-decoration: none !important;
+}
+
+
+/* Dropdown menu styles */
+
+.dropdownBackground {
+    background-color: #222 !important;
+}
+
+.dropdown-menu .dropdown-item {
+    display: block !important;
+    width: 100%;
+}
+
+
+/* anchor tags of dropdown */
+
+
+/* Brand display */
+
+.navbar div.brand {
+    background-color: #b91313;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans;
+    border-radius: 50%;
+}
+
+.brand a {
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 36px;
+    color: #111;
+}
+
+
+/* Section Camarousel*/
+
+
+/*  Indicators */
+
+
+/* anchor tags */
+
+.carousel-caption a.link-extend {
+    text-decoration: none;
+    color: #0ebb0e;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+@media (min-width: 425px) {
+    .carousel-caption a.link-extend {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-caption a.link-extend {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-caption a.link-extend {
+        font-size: 24px !important;
+    }
+}
+
+.carousel-item .carousel-caption p.text-extend {
+    backgrond-color: #44444480 !important;
+}
+
+
+/* Carouwel indicators */
+
+.carousel-indicators .item-extend {
+    /* position: absolute; */
+    bottom: 5px;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+}
+
+
+/* Images */
+
+.carousel-item img {
+    position: relative;
+}
+
+
+/* Project dectiption */
+
+
+/* Project description */
+
+.display-description {
+    margin: auto;
+    width: 50%;
+    top: 20%;
+    left: 50%;
+    padding: 5%;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+@media (min-width: 425px) {
+    .display-description {
+        justify-content: flex-start;
+    }
+}
+
+.display-description p {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 20px auto;
+    font-weight: lighter;
+    border: 1px solid #111;
+    border-radius: 15px;
+    background-color: #44444480;
+    padding: 10px 15px;
+}
+
+.display-description p.description-extend {
+    font-size: 12px !important;
+    display: none;
+    transition: all 1s;
+}
+
+@media (min-width: 768px) {
+    .display-description p.description-extend {
+        display: inline-flex;
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .display-description p.description-extend {
+        font-size: 20px !important;
+    }
+}
+
+
+/* Section second - tools/technologies */
+
+
+/* div.tools {
+    font-family: "Courier New", Courier, monospace;
+} */
+
+
+/* titles Font sizing */
+
+.fontSizing {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 1s;
+}
+
+@media (min-width:425px) {
+    .fontSizing {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:768px) {
+    .fontSizing {
+        font-size: 22px;
+    }
+}
+
+@media (min-width:1024px) {
+    .fontSizing {
+        font-size: 28px;
+    }
+}
+
+.fontSizing2 {
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+@media (min-width:425px) {
+    .fontSizing2 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) {
+    .fontSizing2 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1024px) {
+    .fontSizing2 {
+        font-size: 22px;
+    }
+}
+
+.fontSizing3 {
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+@media (min-width:425px) {
+    .fontSizing3 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:768px) {
+    .fontSizing3 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1024px) {
+    .fontSizing3 {
+        font-size: 18px;
+    }
+}
+
+
+/* About images style */
+
+#about .imageSizing {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+/* Specizl style for all rows in the project used to not display the whole window not widther than 100vw */
+
+.row {
+    margin: 0 !important;
+    /* padding: 0 !important; */
+}
+
+
+/* dodatkowe wyświetlania za pomocą dodatkowych klad */
+
+#home {
+    margin-top: 80px;
+}
