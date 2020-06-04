@@ -6,7 +6,7 @@ Jest to landing page z projektami prac **Pawła Jarosiewicza** oraz **Jakuba Kru
 
 Możesz tu znaleźć informacje oraz odnośniki do projektów oraz mediów społecznościowych ich twórców, a także nawiązać kontakt e-mailowy bezpośrednio z tej strony wybierając osobę do której chcesz napisać w sekcji kontakt.
 
-Strona ta prowadzi do projektów już zakończonych oraz jeszcze w przygotowaniu, jak na przykłac aplikacja **Czarter jachtów**.
+Strona ta prowadzi do projektów już zakończonych oraz jeszcze w przygotowaniu, jak na przykład aplikacja **Czarter jachtów**.
 
 Poruszanie się po stronie jest banalne, menu odniesie Cię do odpowiednich sekcji, w których na pewno się odnajdziesz.
 
