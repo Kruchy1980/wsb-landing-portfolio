@@ -102,6 +102,21 @@ const slideChange = () => {
     changeIndicator();
 }
 
+//Function to change slide on click
+function switchSlide(e) {
+    if(e){
+        console.log(e)
+        clearInterval(slideInterval);
+        activeSlide = Number(e.target.id)-1;
+        singleImage.src = slideList[activeSlide].img;
+        projectTitle.innerHTML = slideList[activeSlide].title;
+        projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
+        changeIndicator();
+        slideInterval = setInterval(slideChange, slideTime);
+    }
+    
+}
+
 // Now implementation
 
 // Set intervas can be implemented here
@@ -110,3 +125,12 @@ let slideInterval = setInterval(slideChange, slideTime);
 
 //1b. If we click onthe element we will call the EventListenet on keypress
 window.addEventListener('keydown', changeSlidesOnArrows);
+//atach function to span
+let s = document.querySelector('.indicators-dots').childNodes;//.getElementsByTagName('SPAN');
+if(s){
+    s.forEach(element => {
+        if(element.nodeName=='SPAN'){
+            element.addEventListener('click',switchSlide,false);
+        }
+    });
+}
