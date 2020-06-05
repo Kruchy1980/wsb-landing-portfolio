@@ -5,6 +5,7 @@ const slideList = [{
         img: './projects-photos/1.ciekawi-historii.jpg',
         title: 'Ciekawi Historii',
         shortDescription: 'Prosta strona WWW stworzona z wykorzystaniem jQuery, Bootstrap i Firebase.',
+        source: 'https://paweljarosiewicz.github.io/WSB-CiekawiHistorii/',
     },
     {
         img: './projects-photos/2.jednoręki-bandyta.jpg',
@@ -28,6 +29,7 @@ const slideList = [{
         img: './projects-photos/5.yacht-charter.jpg',
         title: 'Czarter Jachtów',
         shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht, i dla ludzi, którzy chcą zostać czarterującymi.',
+        source: 'https://charter-yacht-app-vue-wsb-2.now.sh/multi-hulled-sailing-yachts',
     },
 ];
 
@@ -39,11 +41,11 @@ let activeSlide = 0; // we already have information about the image in our html
 // image
 const singleImage = document.querySelector('img.slider');
 // Title
-const projectTitle = document.querySelector('.slide-title ');
+const projectTitle = document.querySelector('a.slide-title ');
 // Short description
 const projectDescriptionShort = document.querySelector('.slide-description ');
 // link to project
-const projectLink = document.querySelector('slide-link');
+// const projectLink = document.querySelector('slide-link');
 // Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not availible for nodeList so we need to use the square brqackets and spread operator to do that
 const indicators = [...document.querySelectorAll('.indicators-dots span')];
 //---------------------------
@@ -71,8 +73,9 @@ const changeSlidesOnArrows = (e) => {
         }
         // what to do on it - repeate of main function
         singleImage.src = slideList[activeSlide].img;
-        projectTitle.innerHTML = `<a href="${slideList[activeSlide].source} alt="${slideList[activeSlide].title} >${slideList[activeSlide].title}</a>"`;
-        // projectLink.innerHTML = 
+        projectTitle.href = slideList[activeSlide].source;
+        projectTitle.alt = slideList[activeSlide].title;
+        projectTitle.innerHTML = slideList[activeSlide].title;
         projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
         changeIndicator();
         slideInterval = setInterval(slideChange, slideTime);
