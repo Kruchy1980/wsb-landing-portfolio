@@ -4,8 +4,7 @@
 const slideList = [{
         img: './projects-photos/1.ciekawi-historii.jpg',
         title: 'Ciekawi Historii',
-        shortDescription: 'Paweł napisz mi co mam tutaj wpisać to wpiszę',
-        source: 'https://github.com/PawelJarosiewicz/WSB-CiekawiHistorii',
+        shortDescription: 'Prosta strona WWW stworzona z wykorzystaniem jQuery, Bootstrap i Firebase.',
     },
     {
         img: './projects-photos/2.jednoręki-bandyta.jpg',
@@ -28,8 +27,7 @@ const slideList = [{
     {
         img: './projects-photos/5.yacht-charter.jpg',
         title: 'Czarter Jachtów',
-        shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht i dla ludzi, którzy chcą zostać czarterującymi.',
-        source: "https://charter-yacht-app-vue-wsb-2.now.sh/",
+        shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht, i dla ludzi, którzy chcą zostać czarterującymi.',
     },
 ];
 
@@ -110,6 +108,21 @@ const slideChange = () => {
     changeIndicator();
 }
 
+//Function to change slide on click
+function switchSlide(e) {
+    if (e) {
+        console.log(e)
+        clearInterval(slideInterval);
+        activeSlide = Number(e.target.id) - 1;
+        singleImage.src = slideList[activeSlide].img;
+        projectTitle.innerHTML = slideList[activeSlide].title;
+        projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
+        changeIndicator();
+        slideInterval = setInterval(slideChange, slideTime);
+    }
+
+}
+
 // Now implementation
 
 // Set intervas can be implemented here
@@ -118,3 +131,12 @@ let slideInterval = setInterval(slideChange, slideTime);
 
 //1b. If we click onthe element we will call the EventListenet on keypress
 window.addEventListener('keydown', changeSlidesOnArrows);
+//atach function to span
+let s = document.querySelector('.indicators-dots').childNodes; //.getElementsByTagName('SPAN');
+if (s) {
+    s.forEach(element => {
+        if (element.nodeName == 'SPAN') {
+            element.addEventListener('click', switchSlide, false);
+        }
+    });
+}
