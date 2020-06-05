@@ -4,7 +4,7 @@
 const slideList = [{
         img: './projects-photos/1.ciekawi-historii.jpg',
         title: 'Ciekawi Historii',
-        shortDescription: 'Paweł napisz mi co mam tutaj wpisać to wpiszę',
+        shortDescription: 'Prosta strona WWW stworzona z wykorzystaniem jQuery, Bootstrap i Firebase.',
     },
     {
         img: './projects-photos/2.jednoręki-bandyta.jpg',
@@ -24,7 +24,7 @@ const slideList = [{
     {
         img: './projects-photos/5.yacht-charter.jpg',
         title: 'Czarter Jachtów',
-        shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht i dla ludzi, którzy chcą zostać czarterującymi.',
+        shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht, i dla ludzi, którzy chcą zostać czarterującymi.',
     },
 ];
 
