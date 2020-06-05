@@ -104,6 +104,8 @@ const slideChange = () => {
     singleImage.src = slideList[activeSlide].img;
     //title
     projectTitle.innerHTML = slideList[activeSlide].title;
+    projectTitle.href = slideList[activeSlide].source;
+    projectTitle.alt = slideList[activeSlide].title;
     // Short description
     projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
 
@@ -119,6 +121,8 @@ function switchSlide(e) {
         activeSlide = Number(e.target.id) - 1;
         singleImage.src = slideList[activeSlide].img;
         projectTitle.innerHTML = slideList[activeSlide].title;
+        projectTitle.href = slideList[activeSlide].source;
+        projectTitle.alt = slideList[activeSlide].title;
         projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
         changeIndicator();
         slideInterval = setInterval(slideChange, slideTime);
