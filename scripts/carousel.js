@@ -5,26 +5,31 @@ const slideList = [{
         img: './projects-photos/1.ciekawi-historii.jpg',
         title: 'Ciekawi Historii',
         shortDescription: 'Paweł napisz mi co mam tutaj wpisać to wpiszę',
+        source: 'https://github.com/PawelJarosiewicz/WSB-CiekawiHistorii',
     },
     {
         img: './projects-photos/2.jednoręki-bandyta.jpg',
         title: 'Jednoręki bandyta',
         shortDescription: 'Prosta gierka w jednorękiego bandytę',
+        source: 'https://kruchy1980.github.io/ohe-arm-bandit-gagme-oop-js/',
     },
     {
         img: './projects-photos/3.git-data-searcher.jpg',
         title: 'Git data Searcher',
         shortDescription: 'Wyszukiwarka podstawowych danych użytkownika git',
+        source: 'https://kruchy1980.github.io/git-data-searcher/',
     },
     {
         img: './projects-photos/4.activity-planner.jpg',
         title: 'Activity Planner',
         shortDescription: 'Jest to planer aktywności stworzony we Vue.js',
+        source: "https://github.com/Kruchy1980/activity-planner",
     },
     {
         img: './projects-photos/5.yacht-charter.jpg',
         title: 'Czarter Jachtów',
         shortDescription: 'Zaawansowana aplikacja stworzona dla ludzi chcących wyczarterować jacht i dla ludzi, którzy chcą zostać czarterującymi.',
+        source: "https://charter-yacht-app-vue-wsb-2.now.sh/",
     },
 ];
 
@@ -39,6 +44,8 @@ const singleImage = document.querySelector('img.slider');
 const projectTitle = document.querySelector('.slide-title ');
 // Short description
 const projectDescriptionShort = document.querySelector('.slide-description ');
+// link to project
+const projectLink = document.querySelector('slide-link');
 // Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not availible for nodeList so we need to use the square brqackets and spread operator to do that
 const indicators = [...document.querySelectorAll('.indicators-dots span')];
 //---------------------------
@@ -66,7 +73,8 @@ const changeSlidesOnArrows = (e) => {
         }
         // what to do on it - repeate of main function
         singleImage.src = slideList[activeSlide].img;
-        projectTitle.innerHTML = slideList[activeSlide].title;
+        projectTitle.innerHTML = `<a href="${slideList[activeSlide].source} alt="${slideList[activeSlide].title} >${slideList[activeSlide].title}</a>"`;
+        // projectLink.innerHTML = 
         projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
         changeIndicator();
         slideInterval = setInterval(slideChange, slideTime);
